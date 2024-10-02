@@ -404,7 +404,7 @@ letter-spacing: 0.5px;
   .image-box {
    /* max-width: 410px;
     max-height: 695px;*/
-    height: 900px;
+    height: 660px;
     width: 80%;
     padding: 10px;
     display: flex;
@@ -447,7 +447,7 @@ letter-spacing: 0.5px;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 20px;
+    gap: 10px;
   }
 
 
@@ -465,7 +465,7 @@ letter-spacing: 0.5px;
     width: 100%;
     color: var(--M3-black, #000);
     font-family: "Nunito Sans";
-    font-size: 40px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 400;
     line-height: 34px; /* 150% */
