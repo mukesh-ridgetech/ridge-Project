@@ -404,7 +404,7 @@ letter-spacing: 0.5px;
   .image-box {
    /* max-width: 410px;
     max-height: 695px;*/
-    height: 700px;
+    height: 900px;
     width: 80%;
     padding: 10px;
     display: flex;
@@ -419,6 +419,10 @@ letter-spacing: 0.5px;
   }
 
   .image {
+
+    width: 300px;
+    height: 300px;
+    /* border: 1px solid black; */
     border-radius: 10px;
     overflow: hidden;
     display: flex;
@@ -429,7 +433,6 @@ letter-spacing: 0.5px;
 
   .image img {
     width: 100%;
-    height: auto;
     object-fit: cover;
     border-radius: 10px;
   }
@@ -472,11 +475,10 @@ letter-spacing: 0.5px;
   .image-text-box3 {
 
     width: 100%;
-   
     color: var(--Secondary-Secondary600, #92a5b5);
     text-align: justify;
     font-family: "Nunito Sans";
-    font-size: 30px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px; /* 133.333% */
