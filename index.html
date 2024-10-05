@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>OpsBridges Home Section</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css" />
     <script src="./index.js" defer></script>
   </head>
@@ -23,9 +26,10 @@
             <div class="nav-container" id="navContainer">
                 <a href="#" class="nav-item active">Home</a>
                 <a href="#" class="nav-item hidden">About Us</a>
-                <a href="#" class="nav-item hidden">Services</a>
+                <a href="#" class="nav-item hidden" id="services-link">Services</a>
                 <a href="#" class="nav-item hidden">Career</a>
                 <a href="#" class="nav-item hidden">Blog</a>
+                <!-- <button class="nav-button ">Contact Us</button> -->
             </div>
             <!-- Hamburger Icon for Mobile -->
             <div class="hamburger" onclick="toggleMenu()">
@@ -38,11 +42,80 @@
     </div>
 
 
+    <div id="services-container" class="services-container">
+      <nav>
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#" id="services-link">Services</a></li>
+              <li><a href="#">Career</a></li>
+              <li><a href="#">Blog</a></li>
+          </ul>
+      </nav>
+      <div class="services-grid">
+          <div class="service-item" onclick="navigateTo('consulting.html')">
+              <img src="./images/Nav Card (1).png" alt="Consulting">
+              <h3>Consulting</h3>
+              <p>Strategic Insights for Business Growth and Success</p>
+          </div>
+          <div class="service-item" onclick="navigateTo('international-hiring.html')">
+              <img src="./images/Nav Card (2).png" alt="International Hiring">
+              <h3>International Hiring</h3>
+              <p>Hiring the best talent globally</p>
+          </div>
+          <div class="service-item" onclick="navigateTo('staffing-services.html')">
+              <img src="./images/Nav Card.png" alt="Staffing Services">
+              <h3>Staffing Services</h3>
+              <p>Professional staffing for all business needs</p>
+          </div>
+          <div class="service-item" onclick="navigateTo('product-development.html')">
+              <img src="./images/Frame 6.png" alt="Product Development">
+              <h3>Product Development</h3>
+              <p>Creating innovative products for success</p>
+          </div>
+      </div>
+  </div>
+
+
 
     <!-- hero section  -->
-     <!-- <div class="hero-container">
-      
-     </div> -->
+    <div class="slider">
+      <div class="slides">
+          <!-- Slide 1 -->
+          <div class="slide">
+              <img src="./images/Group 28 (2).png" alt="Image 1">
+              <div class="text-overlay">
+                  <h1 style="color: black;">Driving Innovation through Strategic <span style="color: #00AEEF;">Product Development</span></h1>
+                  <p style="color: black;">We specialize in developing tailored, user-centric solutions through meticulous planning and agile methodologies, ensuring continuous testing, scalability, and robust security for thriving products in dynamic markets.</p>
+                  <button>Contact Us</button>
+              </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="slide">
+              <img src="./images/Group 29.png" alt="Image 2">
+              <div class="text-overlay">
+                  <h1>Empowering <span class="highlight">Businesses</span> for Growth</h1>
+                  <p>With OpsBridges as your partner, you gain expert guidance and support to navigate your HR challenges, whether on a contract, C2H, or permanent basis, ensuring your success at every step.</p>
+                  <button>Contact Us</button>
+              </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="slide">
+              <img src="./images/Group 30.png" alt="Image 3">
+              <div class="text-overlay">
+                  <h1>Delivering <span class="highlight">Excellence</span> in Every Step</h1>
+                  <p>Our team is dedicated to ensuring your business reaches new heights.</p>
+                  <button>Contact Us</button>
+              </div>
+          </div>
+      </div>
+      <!-- Navigation Dots -->
+      <div class="dots">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+  </div>
     
 
     <!-- achieved secton -->
@@ -50,79 +123,125 @@
       <div class="achievement-container">
         <div class="achievement-main-section">
           <div class="achivent-upper-box">
-            <div class="achivent-upper-box1">Main Features</div>
-            <div class="achivent-upper-box2">
-              Excellence Achieved Through a Variety of Efficient, Reliable, and
-              Safe Services
+            <div class="achivent-upper-box1 gap-size"><h1 class="heading1">Main Features</h1></div>
+            <div class="achivent-upper-box2 gap-size">
+              <h1 class="heading2">
+                Excellence Achieved Through a Variety of Efficient, Reliable, and
+                Safe Services
+              </h1>
+              
             </div>
-            <div class="achivent-upper-box3">
-              We are committed to providing a broad selection of customized
-              services to guarantee our clients get the highest quality, with
-              offerings tailored for effectiveness, dependability, and safety.
+            <div class="achivent-upper-box3 gap-size">
+              <h1 class="heading3">
+                We are committed to providing a broad selection of customized
+                services to guarantee our clients get the highest quality, with
+                offerings tailored for effectiveness, dependability, and safety.
+              </h1>
+              
             </div>
           </div>
           <div class="image-container">
 
-            <div class="image-box">
-              <div class="image">
+            <!-- <div class="image-box ">
+              <div class="image gap-size4">
                 <img src="./images/Rectangle 5.png" alt="" />
               </div>
 
-              <div class="image-text-box">
-                <div class="image-text-box1">Outsourcing</div>
+              <div class="image-text-box ">
+                <div class="image-text-box1 gap-size2"><h1 class="heading">Staffing Services</h1></div>
                 <div class="image-text-box2">
-                  Revolutionizing IT with Expertise and Sustainable Partnerships
+                 <h1 class="sub-heading gap-size3">Linking You to the Perfect Candidates for Sustainable Achievement</h1> 
                 </div>
                 <div class="image-text-box3">
-                  Our services span from supplying top-notch consultants to
-                  creating cutting-edge software and providing effective
-                  outsourcing services. Our dedication is to forge lasting,
-                  trustworthy professional connections. Explore how we can
-                  enhance your IT journey.
+
+                  <p class="para ">
+                    We provide a variety of employment solutions to cater to your staffing requirements. Our dedicated team is focused on securing the ideal candidates for your company, ensuring you possess the necessary skills and knowledge to reach your objectives. With our employment solutions, you can concentrate on your core activities while we handle your staffing needs.
+                  </p>
+                  
                 </div>
               </div>
-            </div>
+            </div> -->
             
 
-            <div class="image-box">
-              <div class="image-text-box">
-                <div class="image-text-box1">Outsourcing</div>
-                <div class="image-text-box2">
-                  Revolutionizing IT with Expertise and Sustainable Partnerships
+            <!-- <div class="image-box">
+              <div class="image-text-box ">
+                <div class="image-text-box1 gap-size2"><h1 class="heading">Scalable Cloud Solutions</h1></div>
+                <div class="image-text-box2 gap-size3">
+                  <h1 class="sub-heading">Innovative Development & Infrastructure for the Modern Digital Landscape</h1>
                 </div>
-                <div class="image-text-box3">
-                  Our services span from supplying top-notch consultants to
-                  creating cutting-edge software and providing effective
-                  outsourcing services. Our dedication is to forge lasting,
-                  trustworthy professional connections. Explore how we can
-                  enhance your IT journey.
+                <div class="image-text-box3 gap-size4 ">
+                  <p class="para ">
+                    Leading the way in tech innovation, we provide customized IT solutions, from powerful software development to scalable infrastructure. Whether it's SaaS, microservices, or cloud-based systems, we ensure seamless integration and optimal performance. Let us help you optimize your IT infrastructure and accelerate digital transformation for long-term success.
+                  </p>
+                  
                 </div>
               </div>
 
               <div class="image">
                 <img src="./images/Rectangle 56(2).png" alt="" />
               </div>
-            </div>
+            </div> -->
 
             <div class="image-box">
-              <div class="image">
+              <div class="image gap-size4">
                 <img src="./images/Rectangle 7 .png" alt="" />
               </div>
 
-              <div class="image-text-box">
-                <div class="image-text-box1">Outsourcing</div>
-                <div class="image-text-box2">
-                  Revolutionizing IT with Expertise and Sustainable Partnerships
+              <div class="image-text-box ">
+                <div class="image-text-box1 gap-size1"><h1 class="heading">Project-Based Staffing</h1></div>
+                <div class="image-text-box2 gap-size2">
+                  <h1 class="sub-heading">Maximizing Success with Careful Planning
+                  </h1>
                 </div>
-                <div class="image-text-box3">
-                  Our services span from supplying top-notch consultants to
-                  creating cutting-edge software and providing effective
-                  outsourcing services. Our dedication is to forge lasting,
-                  trustworthy professional connections. Explore how we can
-                  enhance your IT journey.
+                <div class="image-text-box3 ">
+                   <p class="para ">Temporary staffing helps companies match skills to their project goals, from short-term tasks to long-term initiatives. This approach boosts accuracy and commitment, allowing businesses to meet deadlines and achieve milestones, making it essential for success in today’s dynamic business world.
+                   </p>
                 </div>
               </div>
             </div>
+
+
+            <div class="image-box">
+
+
+              <div class="image-text-box ">
+                <div class="image-text-box1 gap-size1"><h1 class="heading">Project-Based Staffing</h1></div>
+                <div class="image-text-box2 gap-size2">
+                  <h1 class="sub-heading">Maximizing Success with Careful Planning
+                  </h1>
+                </div>
+                <div class="image-text-box3 ">
+                   <p class="para ">Temporary staffing helps companies match skills to their project goals, from short-term tasks to long-term initiatives. This approach boosts accuracy and commitment, allowing businesses to meet deadlines and achieve milestones, making it essential for success in today’s dynamic business world.
+                   </p>
+                </div>
+              </div>
+
+              <div class="image gap-size4">
+                <img src="./images/Rectangle 7 .png" alt="" />
+              </div>
+            </div>
+
+
+
+            <div class="image-box">
+              <div class="image gap-size4">
+                <img src="./images/Rectangle 7 .png" alt="" />
+              </div>
+
+              <div class="image-text-box ">
+                <div class="image-text-box1 gap-size1"><h1 class="heading">Project-Based Staffing</h1></div>
+                <div class="image-text-box2 gap-size2">
+                  <h1 class="sub-heading">Maximizing Success with Careful Planning
+                  </h1>
+                </div>
+                <div class="image-text-box3 ">
+                   <p class="para ">Temporary staffing helps companies match skills to their project goals, from short-term tasks to long-term initiatives. This approach boosts accuracy and commitment, allowing businesses to meet deadlines and achieve milestones, making it essential for success in today’s dynamic business world.
+                   </p>
+                </div>
+              </div>
+            </div>
+
+
           </div>
         </div>
       </div>
@@ -133,14 +252,20 @@
         <div class="text-main-section">
           <div class="text-uper-box">
             <div class="text-uper-box-text1">
-              Guiding Principles:
-              <span style="color: black"
-                >Excellence in Development, Consultation, and Staffing</span
-              >
+              <h1 class="heading2">
+                <span style="color:#00AEEF ;">Guiding Principles:</span>
+                
+                  Excellence in Development, Consultation, and Staffing
+                
+              </h1>
+             
             </div>
             <div class="text-uper-box-text2">
-              Each principle guides us in delivering top-tier solutions,
-              empowering our clients to achieve excellence and long-term success
+              <h1 class="heading3">
+                Each principle guides us in delivering top-tier solutions,
+                empowering our clients to achieve excellence and long-term success
+              </h1>
+
             </div>
           </div>
 
@@ -150,13 +275,17 @@
                 <div class="line"></div>
                 <div class="text-lower-box-main">
                   <div class="text-lower-box-main-uper-text">
-                    Focus on Client Success
+                    <h1 class="heading"> Focus on Client Success</h1>
+                    
                   </div>
                   <div class="text-lower-box-main-lower-text">
-                    We are driven by the success of our clients, aligning our
+                    <p class="para">
+                      We are driven by the success of our clients, aligning our
                     efforts with their goals and ensuring that every project,
                     consultation, or staffing solution helps them achieve
                     sustainable growth and competitiveness.
+                    </p>
+                    
                   </div>
                 </div>
               </div>
@@ -165,13 +294,12 @@
                 <div class="line"></div>
                 <div class="text-lower-box-main">
                   <div class="text-lower-box-main-uper-text">
-                    Focus on Client Success
+                    <h1 class="heading">Commit to Excellence</h1>
+                    
                   </div>
                   <div class="text-lower-box-main-lower-text">
-                    We are driven by the success of our clients, aligning our
-                    efforts with their goals and ensuring that every project,
-                    consultation, or staffing solution helps them achieve
-                    sustainable growth and competitiveness.
+                    <p class="para">Every solution we deliver-whether in product development, IT consultation, or staffing-is crafted with meticulous attention to detail and a commitment to quality that drives measurable results.</p>
+                    
                   </div>
                 </div>
               </div>
@@ -180,13 +308,15 @@
                 <div class="line"></div>
                 <div class="text-lower-box-main">
                   <div class="text-lower-box-main-uper-text">
-                    Focus on Client Success
+                    <h1 class="heading">Innovate for Impact</h1>
+                    
                   </div>
                   <div class="text-lower-box-main-lower-text">
-                    We are driven by the success of our clients, aligning our
-                    efforts with their goals and ensuring that every project,
-                    consultation, or staffing solution helps them achieve
-                    sustainable growth and competitiveness.
+
+                    <p class="para">
+                      We embrace innovation in every service we provide, transforming challenges into opportunities that enable our clients to thrive in a rapidly evolving digital landscape.
+                    </p>
+
                   </div>
                 </div>
               </div>
@@ -197,13 +327,13 @@
                 <div class="line"></div>
                 <div class="text-lower-box-main">
                   <div class="text-lower-box-main-uper-text">
-                    Focus on Client Success
+                    <h1 class="heading">Embrace Agility and Adaptability</h1>
+                    
                   </div>
                   <div class="text-lower-box-main-lower-text">
-                    We are driven by the success of our clients, aligning our
-                    efforts with their goals and ensuring that every project,
-                    consultation, or staffing solution helps them achieve
-                    sustainable growth and competitiveness.
+                   <p class="para">
+                    Our flexible approach allows us to respond quickly to the shifting needs of our clients, ensuring we deliver solutions that remain relevant and impactful in an ever-changing environment.
+                   </p>
                   </div>
                 </div>
               </div>
@@ -212,13 +342,11 @@
                 <div class="line"></div>
                 <div class="text-lower-box-main">
                   <div class="text-lower-box-main-uper-text">
-                    Focus on Client Success
+                    <h1 class="heading">Foster Lasting Client Relationships</h1>
+                    
                   </div>
                   <div class="text-lower-box-main-lower-text">
-                    We are driven by the success of our clients, aligning our
-                    efforts with their goals and ensuring that every project,
-                    consultation, or staffing solution helps them achieve
-                    sustainable growth and competitiveness.
+                    <p class="para">We build strong, trust-based relationships by prioritizing transparency, collaboration, and open communication to ensure mutual success.</p>
                   </div>
                 </div>
               </div>
@@ -235,6 +363,68 @@
 
 
 
+      <!-- active section -->
+      <div class="services-container1">
+        <!-- Left Section -->
+        <div class="left-section">
+            <h2>Best <span style="color: #00a2ff;">Services</span></h2>
+            <p>We spark change by blending industry know-how, cutting-edge technology, proficient experts, established methods, and forward-thinking applications to unlock customized value.</p>
+        </div>
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <!-- Menu Section -->
+            <div class="menu">
+                <button class="menu-btn active" onclick="showContent(0)">Staffing Services</button>
+                <button class="menu-btn" onclick="showContent(1)">Consulting</button>
+                <button class="menu-btn" onclick="showContent(2)">Product Development</button>
+                <button class="menu-btn" onclick="showContent(3)">Outsourcing</button>
+                <button class="menu-btn" onclick="showContent(4)">Lead Management</button>
+                <button class="menu-btn" onclick="showContent(5)">Hybrid Platform</button>
+            </div>
+
+            <!-- Content Section -->
+            <div class="content-section">
+                <img src="https://via.placeholder.com/50" alt="Icon">
+                <p id="content-text">
+                    We provide a variety of employment solutions to suit your staffing requirements. Our team is committed to identifying the perfect candidates for your company, making sure you have the necessary skills and knowledge to reach your objectives. With our employment solutions, you can concentrate on your core activities while we handle your staffing needs.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="text-container acceleration">
+      <div class="text-main-section">
+        <div class="text-uper-box">
+          <div class="text-uper-box-text1">
+            <h1 class="heading2">
+              <span style="color:#00AEEF ;">Guiding Principles:</span>
+              
+                Excellence in Development, Consultation, and Staffing
+              
+            </h1>
+           
+          </div>
+          <div class="text-uper-box-text2">
+            <h1 class="heading3">
+              Each principle guides us in delivering top-tier solutions,
+              empowering our clients to achieve excellence and long-term success
+            </h1>
+
+          </div>
+        </div>
+
+        <div class="text-lower-box">
+           
+          <div class="accelaration-digital">
+
+          </div>
+         
+        </div>
+      </div>
+    </div>
 
 
       <!-- Requirement Experties section -->
@@ -242,26 +432,26 @@
       <div class="achievement-container"></div>
         <div class="achievement-main-section">
           <div class="achivent-upper-box">
-            <div class="achivent-upper-box1">Recruitment Expertise</div>
-            <div class="achivent-upper-box2">
-              We apply a strategic prioritization framework, model real-world scenarios, and harness the collective expertise of our cross-functional teams to create outstanding digital experiences
+            <div class="achivent-upper-box1 gap-size"><h1 class="heading2"><span style="color: #00AEEF;">Recruitment</span> Expertise</h1></div>
+            <div class="achivent-upper-box2 gap-size">
+             <h1 class="heading3"> We apply a strategic prioritization framework, model real-world scenarios, and harness the collective expertise of our cross-functional teams to create outstanding digital experiences</h1>
             </div>
             
           </div>
           <div class="image-container1">
             
             <div class="image-box1">
-              <div class="image1">
+              <div class="image1 gap-size4">
                 <img src="./images/Rectangle 5.png" alt="" />
               </div>
 
               <div class="image-text-box1">
-                <div class="image-text-box11">Outsourcing</div>
-                <div class="image-text-box21">
-                  OpsBridges Job Portal
-                </div>
+                <div class="image-text-box11 gap-size3"><h1 class="heading">Outsourcing</h1></div>
+                
                 <div class="image-text-box31">
-                  Opsbridges job portal evolutionize the job search process that empower job seekers to explore and find perfect job. Employers streamline recruitment, accessing a diverse pool of candidates to find the perfect fit for their vacancies.
+
+                  <p class="para">Opsbridges job portal evolutionize the job search process that empower job seekers to explore and find perfect job. Employers streamline recruitment, accessing a diverse pool of candidates to find the perfect fit for their vacancies.</p>
+                  
                 </div>
               </div>
 
@@ -274,20 +464,21 @@
 
             <div class="item-dummy">
 
-              <div class="image1">
+              <div class="image1 gap-size4">
                 <img src="./images/Rectangle 5.png" alt="" />
               </div>
 
               <div class="image-text-box1">
-                <div class="image-text-box11">Free Job Post</div>
-                <div class="image-text-box21">
-                  Revolutionizing IT with Expertise and Sustainable Partnerships
-                </div>
+                <div class="image-text-box11 gap-size3"><h1 class="heading"></h1>Free Job Post</div>
+                
                
               </div>
 
               <div class="image-text-box31">
-                Our free job post offers a cost-effective solution for employers. By eliminating financial barriers, you can reach a broader pool of potential candidates, fostering inclusivity. creating a win-win scenario for candidate and employer both.
+                <p class="para">
+                  Our free job post offers a cost-effective solution for employers. By eliminating financial barriers, you can reach a broader pool of potential candidates, fostering inclusivity. creating a win-win scenario for candidate and employer both.
+                </p>
+                
               </div>
 
               <div class="requirement-button">
@@ -300,15 +491,13 @@
             <div class="image-box1">
               <div class="image-text-box1">
 
-                <div class="image1">
+                <div class="image1 gap-size4">
                   <img src="./images/Rectangle 56(2).png" alt="" />
                 </div>
-                <div class="image-text-box11">Contract Staffing</div>
-                <div class="image-text-box21">
-                  Revolutionizing IT with Expertise and Sustainable Partnerships
-                </div>
+                <div class="image-text-box11 gap-size3"> <h1 class="heading">Contract Staffing</h1></div>
                 <div class="image-text-box31">
-                  Our Contract staffing is a strategic employment approach where businesses hire professionals for specific projects or durations. This flexible model provides companies with specialized skills without long-term commitments.
+                  <p class="para">Our Contract staffing is a strategic employment approach where businesses hire professionals for specific projects or durations. This flexible model provides companies with specialized skills without long-term commitments.</p>
+                 
                 </div>
               </div>
 
@@ -327,17 +516,18 @@
             
 
             <div class="image-box1">
-              <div class="image1">
+              <div class="image1 gap-size4">
                 <img src="./images/Rectangle 7 .png" alt="" />
               </div>
 
               <div class="image-text-box11">
-                <div class="image-text-box11">Interview Process</div>
-                <div class="image-text-box21">
-                  Revolutionizing IT with Expertise and Sustainable Partnerships
-                </div>
-                <div class="image-text-box31">
-                  OpsBridges Knows that effective screening and interviews are the linchpin of successful recruitment. Screening sifts through resumes to identify suitable candidates, while interviews delve into skills, culture fit, and motivation. We are here to help you.
+                <div class="image-text-box11 gap-size3"><h1 class="heading">Interview Process</h1></div>
+                
+                <div class="image-text-box31 gap-size4">
+                  <p class="para">
+                    OpsBridges Knows that effective screening and interviews are the linchpin of successful recruitment. Screening sifts through resumes to identify suitable candidates, while interviews delve into skills, culture fit, and motivation. We are here to help you.
+                  </p>
+
                 </div>
               </div>
               <div class="requirement-button">
@@ -365,9 +555,9 @@
                          <img src="./images/Rectangle 15.png" alt="">
                     </div>
                     <div class="stantout-content-part">
-                        <div class="stantout-content-uper">Why OpsBridges Stands Out</div>
+                        <div class="stantout-content-uper"><h1 class="heading2">Why <span style="color: ;">OpsBridges</span> Stands Out</h1></div>
                         <div class="stantout-content-lower">
-                          At OpsBridges, we pride ourselves on being the bridge between cutting-edge technology and global enterprises. By focusing on three key verticals, we deliver unparalleled IT solutions tailored to meet the unique needs of our clients.<br> <br>Our offerings include top-tier consulting services, state-of-the-art software development, and efficient outsourcing solutions. We are dedicated to building long-term, trust-based professional relationships that empower your IT journey.<br><br>Our mission is to be your preferred consulting partner. We believe in fostering enduring partnerships with all our clients, whether on a contract, contract-to-hire, or permanent basis. With OpsBridges by your side, you’re not just hiring a consultant; you’re gaining a partner committed to providing expert guidance and support at every step to navigate your HR challenges successfully.
+                         <p class="para"> At OpsBridges, we pride ourselves on being the bridge between cutting-edge technology and global enterprises. By focusing on three key verticals, we deliver unparalleled IT solutions tailored to meet the unique needs of our clients.<br> <br>Our offerings include top-tier consulting services, state-of-the-art software development, and efficient outsourcing solutions. We are dedicated to building long-term, trust-based professional relationships that empower your IT journey.<br><br>Our mission is to be your preferred consulting partner. We believe in fostering enduring partnerships with all our clients, whether on a contract, contract-to-hire, or permanent basis. With OpsBridges by your side, you’re not just hiring a consultant; you’re gaining a partner committed to providing expert guidance and support at every step to navigate your HR challenges successfully.</p>
                         </div>
                     </div>
              </div>
@@ -383,6 +573,39 @@
               <img src="./images/Frame 70.png" alt="">
          </div>
 
+
+         <div class="stantout-container">
+          <div class="standout-container-main">
+
+             <div class="stantout-content">
+
+                    <div class="stantout-content-part">
+                         
+                      <div style="align-items: center;"> <h1 class="heading3"> Why Choose Us?</h1></div>
+                      <div>
+                         <p class="para">OpsBridges is dedicated to optimizing your operations for maximum efficiency and effectiveness. Our global teams leverage local insights to ensure your projects are executed with precision and delivered on time, every time. Clients choose us for our commitment to excellence, flexibility in tailored services, and a strong focus on exceptional customer service, all designed to minimize risks and enhance overall business performance. Experience the difference with OpsBridges.</p>
+                      </div>
+                      <div class="counter-upper-box">
+                            <div class="counter-upper-box-left">
+                                  <div>
+                                    <img src="./images/completed-task (1) 1.png" alt="" style="width: 40px;">
+                                  </div>
+                                  <div>
+                                     10+
+                                  </div>
+                            </div>
+                            <div></div>
+                      </div>
+                       
+                    </div>
+
+                    <div class="image-part">
+                      <img src="./images/Rectangle 15.png" alt="">
+                 </div>
+             </div>
+             
+          </div>
+       </div>
 
          <!-- case study section -->
           <div class="study-container">
