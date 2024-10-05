@@ -2357,17 +2357,101 @@ margin-bottom: 10px;
 
 
 
-  /* counter section */
-  .counter-upper-box{
-       display: flex;
-  }
-
-  .counter-upper-box-left{
-       display: flex;
-       flex-direction: row;
-       border: 1px solid black;
-  }
+  /* why choose us */
   
+
+        .why-choose-us {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .content-choose-us {
+            flex: 1;
+            padding-right: 20px;
+            max-width: 50%;
+        }
+
+        .upper-div-choose-us {
+            margin-bottom: 20px;
+        }
+
+        .highlight-choose-us {
+            color: #007BFF;
+        }
+
+        .counters-choose-us {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .counter-item-choose-us {
+            flex-basis: calc(50% - 10px); /* Two per row */
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: #fff;
+        }
+
+        .counter-item-choose-us .icon {
+            font-size: 30px;
+            color: #007BFF;
+        }
+
+        .counter-item-choose-us .counter-text {
+            text-align: left;
+        }
+
+        .counter-item-choose-us .counter {
+            font-size: 36px;
+            color: #007BFF;
+        }
+
+        .counter-item-choose-us p {
+            margin: 0;
+        }
+
+        .image-container-choose-us {
+            flex: 1;
+            max-width: 50%;
+        }
+
+        .image-container-choose-us img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .why-choose-us {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .content-choose-us {
+                padding-right: 0;
+                max-width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .image-container-choose-us {
+                max-width: 100%;
+            }
+
+            .counter-item-choose-us {
+                flex-basis: 100%; /* One per row on smaller screens */
+            }
+        }
+   
 
   /* footer sectioin */
   .footer-content{
