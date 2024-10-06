@@ -1,0 +1,116 @@
+/* nav bar */
+
+.navbar {
+  background-color: #0d1128 !important;
+  transition: background-color 0.3s ease;
+  padding: 5px 0;
+}
+
+.sticky-top {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar .navbar-collapse {
+  justify-content: flex-end;
+}
+
+.navbar-scrolled {
+  background-color: rgb(255, 255, 255, ) !important;
+}
+
+#ftco-navbar {
+  z-index: 100;
+}
+
+.navbar-nav {
+  font-weight: 700;
+}
+
+.dropdown-menu {
+  background-color: #0d1128;
+}
+
+.dropdown-item {
+  color: #fff;
+  font-weight: 650;
+}
+
+.dropdown-item:hover {
+  background-color: #0d1128;
+  color: #00aeef;
+  font-weight: 650;
+}
+
+.dropdown-menu {
+  margin-top: 0 !important;
+  margin-right: 50px;
+}
+
+.btn-sucess:hover {
+  border: 1px solid #1be37c !important;
+  background: transparent !important;
+  color: #1be37c !important;
+}
+
+@media (max-width: 1017px) {
+  .nav-item {
+    font-size: 14px;
+  }
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='%2300a79f' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+@media (min-width: 991px) {
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+}
+
+/* footer */
+
+.fab:hover {
+  color: #1750ac !important;
+}
+
+.fa-chevron-right {
+  color: inherit !important;
+}
+
+/* .ftco-footer a:hover{
+  color: #0796fe !important;
+} */
+
+/* btn to go top */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 9999;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  background-color: #00aeef;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 5px 5px 5px #fff;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+@media (max-width: 991px) {
+  .navbar {
+    padding: 12px 0;
+
+  }
+}

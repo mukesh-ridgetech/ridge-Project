@@ -12,7 +12,7 @@ body{
    color: var(--Ops-P, #00AEEF); 
    font-size: 28px;
    font-style: normal;
-    font-weight: 700;
+    font-weight: 800;
    line-height: 36px; /* 128.571% */
    letter-spacing: 0.5px;
    margin: 0px;
@@ -26,7 +26,7 @@ text-align: center;
 font-family: "Nunito Sans";
 font-size: 36px;
 font-style: normal;
-font-weight: 700;
+font-weight: 800;
 line-height: normal;
 letter-spacing: 0.5px;
 margin: 0px;
@@ -40,7 +40,7 @@ text-align: center;
 font-family: "Nunito Sans";
 font-size: 24px;
 font-style: normal;
-font-weight: 400;
+font-weight: 500;
 line-height: 36px; /* 150% */
 letter-spacing: 0.5px;
 margin: 0px;
@@ -54,7 +54,7 @@ padding: 0px;
     font-family: "Nunito Sans";
 font-size: 1.5rem;
 font-style: normal;
-font-weight: 700;
+font-weight: 800;
 line-height: normal;
 letter-spacing: 0.03125rem;
 margin: 0px;
@@ -66,7 +66,7 @@ margin: 0px;
     font-family: "Nunito Sans";
     font-size: 1.25rem;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.875rem; /* 150% */
     letter-spacing: 0.03125rem;
     margin: 0px;
@@ -80,7 +80,7 @@ text-align: left;
 font-family: "Nunito Sans";
 font-size: 1.125rem;
 font-style: normal;
-font-weight: 400;
+font-weight: 500;
 line-height: 1.5rem; /* 133.333% */
 letter-spacing: 0.03125rem;
 margin: 0px;
@@ -108,6 +108,19 @@ margin: 0px;
     margin-bottom: 24px;
   }
 
+  .hero-headig{
+    color: var(--Neutrals-Base-White, #FCFCFC);
+
+/* H1 Ops */
+font-family: "Nunito Sans";
+font-size: 46px;
+font-style: normal;
+font-weight: 800;
+line-height: 69px; /* 150% */
+letter-spacing: 0.5px;
+margin: 0%;
+padding: 0%;
+  }
 
 
   /* Extra small devices (phones, 600px and down) */
@@ -230,6 +243,7 @@ letter-spacing: 0.5px;
         @media (max-width: 768px) {
             .nav-container {
                 position: absolute;
+                z-index: 20;
                 top: 60px;
                 right: 0;
                 background-color: white;
@@ -273,11 +287,13 @@ letter-spacing: 0.5px;
 
         /* Navigation Styles */
         nav {
-            background-color: #fff;
+
             padding: 10px 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+           
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
+
+            margin-bottom: 40px;
         }
 
         nav ul {
@@ -315,15 +331,17 @@ letter-spacing: 0.5px;
             padding: 20px 0;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             z-index: 1;
+            border-bottom-left-radius: 20px;
         }
 
         .services-grid {
             display: flex;
             justify-content: space-around;
             align-items: center;
-            gap: 20px;
-            max-width: 1200px;
+            gap: 10px;
+            max-width: 900px;
             margin: 0 auto;
+            /* border: 1px solid black; */
         }
 
         .service-item {
@@ -331,13 +349,15 @@ letter-spacing: 0.5px;
             padding: 20px;
             border: 1px solid #ddd;
             text-align: center;
-            width: 200px;
+            width: 130px;
+            height: 200px;
             cursor: pointer;
             transition: box-shadow 0.3s ease;
         }
 
         .service-item:hover {
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            width: 135px;
         }
 
         .service-item img {
@@ -415,7 +435,7 @@ letter-spacing: 0.5px;
         .slider {
             position: relative;
             max-width: 100%;
-            height: 100vh; /* Full height on desktop */
+            height: 110vh; /* Full height on desktop */
             overflow: hidden;
         }
 
@@ -438,12 +458,12 @@ letter-spacing: 0.5px;
 
         .text-overlay {
             position: absolute;
-            top: 50%;
+            top: 40%;
             left: 10%;
             transform: translateY(-50%);
             color: white;
             text-align: left;
-            max-width: 500px; /* Limit text width */
+            max-width: 750px; /* Limit text width */
         }
 
         .text-overlay h1 {
@@ -472,8 +492,8 @@ letter-spacing: 0.5px;
 
         .text-overlay button{
 
-          width: 30%;
-          height: 3vw;
+          width: 100px;
+          height: 40px;
           border: 1px solid #00A79D;
           background-color: #00A79D;
           border-radius: 10px;
@@ -486,6 +506,7 @@ letter-spacing: 0.5px;
           font-weight: 500;
           line-height: normal;
           letter-spacing: 0.5px;
+          margin-top: 40px;
       
         }
 
@@ -674,7 +695,7 @@ letter-spacing: 0.5px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 1.5%;
+    gap: 24px;
     align-self: stretch;
     margin-bottom: 3%;
     
@@ -683,7 +704,7 @@ letter-spacing: 0.5px;
   .image-box {
    /* max-width: 410px;
     max-height: 695px;*/
-    width: 32%;
+    width: 400px;
     padding: 1%;
     display: flex;
     border: 1px solid #00AEEF;
@@ -693,7 +714,7 @@ letter-spacing: 0.5px;
     flex-direction: column;
     align-items: flex-start;
     gap: 2%;
-    height: 600px;
+    height: 695px;
   }
 
   .image {

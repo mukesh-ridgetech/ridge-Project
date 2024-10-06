@@ -22,6 +22,34 @@ document.querySelectorAll(".nav-item").forEach((item) => {
 
 
 
+        // services function
+
+      
+        // Toggle Services Dropdown
+        const servicesLink = document.getElementById('services-link');
+        const servicesContainer = document.getElementById('services-container');
+
+        servicesLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            servicesContainer.style.display = servicesContainer.style.display === 'block' ? 'none' : 'block';
+        });
+
+        // Detect clicks outside the services-container to close it
+        document.addEventListener('click', function (event) {
+            const isClickInside = servicesLink.contains(event.target) || servicesContainer.contains(event.target);
+
+            if (!isClickInside) {
+                servicesContainer.style.display = 'none';
+            }
+        });
+
+        // Navigate function for each service item
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+   
+
+
 
 
 // Counter Animation

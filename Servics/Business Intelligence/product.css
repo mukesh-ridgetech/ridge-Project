@@ -1,0 +1,225 @@
+.consulting-section{
+    padding: 80px 0;
+    background-color: #f8f8f8;
+  }
+  
+  .remote-intro-consulting{
+   
+    background-color:#2a9fdf;
+   
+    color: #fff;
+  }
+   
+    .remote-intro , .consultation {
+      color: white;
+      font-weight: 700;
+    }
+  
+    .remote-services-consulting{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .remote-services-consulting p{
+        text-align: justify;
+      }
+    
+      .remote-services-content-consulting{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+      }
+      .flip-card-consulting {
+        background-color: transparent;
+        width: 250px;
+        height: 300px;
+        perspective: 1000px;
+        margin: 15px;
+      }
+      
+      .flip-card-inner-consulting {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      }
+      
+      .flip-card-consulting:hover .flip-card-inner-consulting {
+        transform: rotateY(180deg);
+      }
+      
+      .flip-card-front-consulting,
+      .flip-card-back-consulting {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+      
+      .flip-card-front-consulting {
+        background-color: #bbb;
+        color: black;
+      }
+      
+      .flip-card-title-consulting {
+        position: relative;
+        bottom: 168px;
+        font-size: 1.6rem;
+        font-weight: 800;
+        color: white;
+      }
+  
+      .flip-card-back-consulting {
+        background-color: #41525c;
+        color: white;
+        transform: rotateY(180deg);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+      }
+      
+      .flip-card-back-consulting span{
+        font-size: 1.5rem;
+        font-weight: 800;
+      } 
+      .flip-card-back-consulting p{
+        font-size: 0.9rem;
+      }
+  
+  .consultation-consulting {
+    background: url('./images/VIRTUAL\ TEAMS\ &\ TECH\ ENABLEMENT\ 1.png') center center/cover no-repeat;
+    color: #fff;
+  }
+  .background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .left-cons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .right img {
+    width: 100%; 
+  }
+  
+  
+  .left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2rem;
+  }
+  
+  
+  .flip-card-img-consulting{
+  filter: contrast(45%);
+  height: 100%;
+  }
+  
+  
+  .btn-consulting:hover{
+  border: 1px solid #1be37c !important;
+  background: transparent !important;
+  color: #1be37c !important;
+  }
+  
+  .center-vertically {
+  display: flex;
+  align-items: center;
+  }
+  @media (max-width: 767px) {
+  .mobile-order {
+      order: -1;
+  }
+  }
+  @media(max-width :500px){
+    .Proposed-staffing-card:hover img {
+      transform: scale(1.1);
+      }
+      .staffing-card-heading{
+        color: #00a79d;
+        font-weight: 700;
+        
+        }
+        .card:hover .card-content {
+        opacity: 1;
+        }
+        .Proposed-staffing-card-content {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          padding: 20px;
+          background-color: rgba(0, 0, 0, 0.7);
+          color: white;
+          box-sizing: border-box;
+          opacity: 0;
+          transition: opacity 0.5s ease;
+          }
+  
+  }
+  .mobile-order p{
+    text-align: justify;
+  
+  }
+  
+  
+  
+  
+  /*  */
+  .Proposed-staffing-card {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  box-shadow: 5px 5px 5px #00aeef;
+  max-width: 300px;
+  }
+  
+  .Proposed-staffing-card img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  
+  }
+  
+  .Proposed-staffing-card:hover img {
+  transform: scale(1.1);
+  }
+  
+  .Proposed-staffing-card-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  }
+  .staffing-card-heading{
+  color: #00a79d;
+  font-weight: 700;
+  
+  }
+  .card:hover .card-content {
+  opacity: 1;
+  }

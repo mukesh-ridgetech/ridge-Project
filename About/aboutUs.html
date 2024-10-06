@@ -18,9 +18,9 @@
   
           <div class="navbar">
               <div class="nav-container" id="navContainer">
-                  <a href="#" class="nav-item hidden">Home</a>
+                  <a href="../index.html" class="nav-item hidden">Home</a>
                   <a href="#" class="nav-item active">About Us</a>
-                  <a href="#" class="nav-item hidden">Services</a>
+                  <a href="#" class="nav-item hidden" id="services-link">Services</a>
                   <a href="#" class="nav-item hidden">Career</a>
                   <a href="#" class="nav-item hidden">Blog</a>
                   <!-- <button class="nav-button ">Contact Us</button> -->
@@ -34,6 +34,46 @@
           </div>
       </div>
       </div>
+
+
+      <div id="services-container" class="services-container">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#" id="services-link">Services</a></li>
+                <li><a href="#">Career</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="services-grid">
+            <div class="service-item" onclick="navigateTo('../Servics/Business Intelligence/business.html')">
+                 
+                
+                <img src="./images/Nav Card (1).png" alt="Consulting">
+                <h3>Consulting</h3>
+                <p>Strategic Insights for Business Growth and Success</p>
+            </div>
+            <div class="service-item" onclick="navigateTo('../Servics/Business Intelligence/international.html')">
+  
+                <img src="./images/Nav Card (2).png" alt="International Hiring">
+                <h3>International Hiring</h3>
+                <p>Hiring the best talent globally</p>
+            </div>
+            <div class="service-item" onclick="navigateTo('../Servics/Business Intelligence/staffing.html')">
+              
+                <img src="./images/Nav Card.png" alt="Staffing Services">
+                <h3>Staffing Services</h3>
+                <p>Professional staffing for all business needs</p>
+            </div>
+            <div class="service-item" onclick="navigateTo('../Servics/Business Intelligence/product.html')">
+              
+                <img src="./images/Frame 6.png" alt="Product Development">
+                <h3>Product Development</h3>
+                <p>Creating innovative products for success</p>
+            </div>
+        </div>
+    </div>
 
     <div class="hero">
         <div class="hero-content">
