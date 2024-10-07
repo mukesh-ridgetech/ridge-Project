@@ -19,6 +19,8 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      gap: 40px;
+      
     }
     .remote-services-consulting p{
       text-align: justify;
@@ -27,7 +29,7 @@
     .remote-services-content-consulting{
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
+      gap: 30px;
       justify-content: center;
     }
     .flip-card-consulting {
